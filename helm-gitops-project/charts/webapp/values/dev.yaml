@@ -10,7 +10,7 @@ image:
 service:
   type: ClusterIP
   port: 80
-# Simple ingress config without domain
+
 
 ingress:
   enabled: true
@@ -19,7 +19,7 @@ ingress:
   hostnames:
     - dev-webapp.local
   annotations: {}
-  addRootPath: true # Only add this to one of your environments (prod or dev)
+  addRootPath: true 
 resources:
   requests:
     memory: "64Mi"
