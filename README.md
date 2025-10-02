@@ -1,13 +1,13 @@
 # Tech assignment – GitOps-driven Helm Deployment with Terraform & ArgoCD
 
-This repoository demonstrates the end-to-end automation of Kubernetes application deployment on Amazon EKS using **Terraform, Helm, ArgoCD, and GitHub Actions**. It includes Terraform configurations to provision the underlying AWS infrastructure, Helm charts to package and configure the application, ArgoCD manifests to enable GitOps-based deployments, and CI/CD workflows to automate Helm packaging and deployment.
+This repository demonstrates the end-to-end automation of Kubernetes application deployment on Amazon EKS using **Terraform, Helm, ArgoCD, and GitHub Actions**. It includes Terraform configurations to provision the underlying AWS infrastructure, Helm charts to package and configure the application, ArgoCD manifests to enable GitOps-based deployments, and CI/CD workflows to automate Helm packaging and deployment.
 
 ---
 
 ## Repository Contents ####
 
 ### Terraform
-- **eks.tf**: I Defined the EKS cluster and nodee group resources to host the Kubernetes workloads.
+- **eks.tf**: I Defined the EKS cluster and node group resources to host the Kubernetes workloads.
 - **vpc.tf**: Here the configurations for the networking layer including VPC, subnets, and routing for EKS has been established.
 - **variables.tf**: This terraform file contains parameterized input variables for reusability and flexible infrastructure configuration.
 - **versions.tf**: It Specifies the provider and Terraform version constraints to ensure reproducibility.
